@@ -1,8 +1,7 @@
-import { Injectable, OnInit } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Subject } from "rxjs";
 import { CourseInstance } from "../models/CourseInstance";
 import { HttpClient } from "@angular/common/http";
-import { CourseAddComponent } from "../components/courseinstance/course-add/course-add.component";
 import { UploadResponse } from "../models/UploadResponse";
 
 @Injectable({
@@ -22,7 +21,7 @@ import { UploadResponse } from "../models/UploadResponse";
     // This method returns a courseinstance array from the server
     getCourseInstances() : Subject<CourseInstance[]>{
       this.httpClient
-        .get<CourseInstance[]>(this.url + 'courseinstances')
+        .get<CourseInstance[]>(this.url + 'courseinstances/week')
         .subscribe((courseInstances) => {
           this.courseInstances = courseInstances
           this.subject.next(this.courseInstances);

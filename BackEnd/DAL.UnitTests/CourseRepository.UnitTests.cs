@@ -90,7 +90,7 @@ namespace DAL.UnitTests
         }
 
         [TestMethod]
-        public void Create_Course_Should_Add_A_New_Course()
+        public void Create_Should_Add_A_New_Course()
         {
             // Arrange 
             var newCourse = new Course() { Id = 5, Title = "Fifth title", Code = "Fifth Code", Duration = 3 };
@@ -108,7 +108,26 @@ namespace DAL.UnitTests
             Assert.IsInstanceOfType(courses[4], typeof(Course));
         }
 
+        [TestMethod]
+        public void Create_Should_Throw_An_erro_When_Course_code_is_Too_Long()
+        {
+            // Arrange 
+            var newCourse = new Course() { Id = 5, Title = "Fifth title", Code = "This code is longer than 10 characters", Duration = 3 };
 
+            // Act
+            var created = _repository.Create(newCourse);
+            var courses = _repository.GetAllCourses().Result;
+            var result = courses.Count();
+
+            // Assert
+            int expectedCount = 5;
+
+            Assert.IsInstanceOfType(created.Result, typeof(Course));
+            Assert.AreEqual(expectedCount, result);
+            Assert.AreEqual("This code is longer than 10 characters", created.Result.Code);
+
+            Assert.IsInstanceOfType(courses[4], typeof(Course));
+        }
     }
 }
     

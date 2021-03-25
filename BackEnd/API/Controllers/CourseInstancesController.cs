@@ -2,7 +2,9 @@
 using DAL.Interfaces;
 using DomainClasses;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 
 namespace API.Controllers
@@ -24,6 +26,17 @@ namespace API.Controllers
         public async Task<List<CourseInstance>> GetAllCourseInstances()
         {
             return await _courseInstanceContext.GetAllCourseInstances();
+        }
+
+        //GET: api/CourseInstances/     
+        [HttpGet]
+        [Route("/api/CourseInstances/week/{weeknr?}")]
+        public async Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr)
+        {
+            if (weeknr == null)
+                weeknr = ISOWeek.GetWeekOfYear(DateTime.Now);
+
+            return await _courseInstanceContext.GetAllCourseInstancesPerGivenWeek(weeknr);
         }
 
         //POST: api/CourseInstances/     

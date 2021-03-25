@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DAL.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class AddedEntityConfiguration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,8 @@ namespace DAL.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Code = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Title = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
+                    Code = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Duration = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

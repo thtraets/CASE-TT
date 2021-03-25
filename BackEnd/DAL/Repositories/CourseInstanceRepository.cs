@@ -29,6 +29,23 @@ namespace DAL.Repositories
         }
 
 
+        public async Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr)
+        {
+            List<CourseInstance> instances = new List<CourseInstance>();
+
+            foreach (var instance in await GetAllCourseInstances())
+            {
+                var ciWeeknr = ISOWeek.GetWeekOfYear(instance.StartDate);
+
+                if (weeknr == ciWeeknr)
+                    instances.Add(instance);
+            }
+                        
+            return instances;
+        }
+
+
+
         public async Task<CourseInstance> Create(CourseInstance instance)
         {
             _context.Add(instance);

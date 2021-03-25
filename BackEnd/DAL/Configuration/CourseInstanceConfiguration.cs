@@ -16,9 +16,6 @@ namespace DAL.Configuration
                 .ValueGeneratedOnAdd();
             builder.Property(ci => ci.StartDate)
                 .IsRequired();
-            builder.Property(ci => ci.Course)
-                .IsRequired();
-            builder.HasOne(c => c.Course);
         }
     }
 }

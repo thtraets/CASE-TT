@@ -20,7 +20,6 @@ namespace DAL.Configuration
             builder.Property(c => c.Code)
                 .IsRequired()
                 .HasMaxLength(10);
-
         }
     }
 }

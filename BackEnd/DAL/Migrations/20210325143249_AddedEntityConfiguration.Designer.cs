@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20210322192958_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20210325143249_AddedEntityConfiguration")]
+    partial class AddedEntityConfiguration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,13 +29,17 @@ namespace DAL.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Code")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<int>("Duration")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
 
                     b.HasKey("Id");
 

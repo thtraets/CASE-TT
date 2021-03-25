@@ -10,7 +10,7 @@ import { CourseInstanceService } from 'src/app/services/courseInstance.service';
 export class CourseinstanceOverviewComponent implements OnInit {
 
   courseInstances: CourseInstance[];
-  dateTime = new Date();
+  date = new Date();
 
   constructor(private courseInstanceService: CourseInstanceService) { }
 
