@@ -1,6 +1,8 @@
 ﻿using API.Controllers;
+using API.Utils;
 using DAL.Interfaces;
 using DomainClasses;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -8,12 +10,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
+
 namespace API.UnitTests
 {
     public class CourseInstancesControllerTests
     {
         [Fact]
-        public void GetAllCourseInstances_Should_Return_A_List_Of_Courses_And_Contain_Correct_Number_Of_Courses()
+        public void GetAllCourseInstances_From_Controller_Should_Return_A_List_Of_Courses_And_Contain_Correct_Number_Of_Courses()
         {
             // Arrange
             var instanceMockRepo = new Mock<ICourseInstanceRepository>();
@@ -63,6 +66,5 @@ namespace API.UnitTests
             };
             return sessions;
         }
-
     }
 }

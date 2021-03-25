@@ -1,4 +1,5 @@
-﻿using DomainClasses;
+﻿using DAL.Configuration;
+using DomainClasses;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,12 @@ namespace DAL.Data
         public virtual DbSet<CourseInstance> CourseInstances { get; set; }
 
 
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration<Course>(new CourseConfiguration());
+            modelBuilder.ApplyConfiguration<CourseInstance>(new CourseInstanceConfiguration());
+        }
 
     }
 }
