@@ -1,0 +1,9 @@
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\bin\Debug\netcoreapp3.1\DomainClasses.deps.json
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\bin\Debug\netcoreapp3.1\DomainClasses.dll
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\bin\Debug\netcoreapp3.1\DomainClasses.pdb
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\obj\Debug\netcoreapp3.1\DomainClasses.AssemblyInfoInputs.cache
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\obj\Debug\netcoreapp3.1\DomainClasses.AssemblyInfo.cs
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\obj\Debug\netcoreapp3.1\DomainClasses.csproj.CoreCompileInputs.cache
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\obj\Debug\netcoreapp3.1\DomainClasses.dll
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\obj\Debug\netcoreapp3.1\DomainClasses.pdb
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\DomainClasses\obj\Debug\netcoreapp3.1\DomainClasses.csprojAssemblyReference.cache

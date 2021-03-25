@@ -1,0 +1,16 @@
+@import "~bootstrap/dist/css/bootstrap.css"; 
+
+h1{
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 12px;
+}
+
+div{
+    margin-left: 12px;
+}
+
+table{
+    margin-left: 12px;
+}

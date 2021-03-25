@@ -1,0 +1,42 @@
+
+<h1>Upload</h1>
+
+<div class="form-group">
+    <label>Selecteer Bestand:  </label>
+    <input 
+        type='file' 
+        type="file" 
+        accept=".txt"
+        class="form-control col-3"
+        (change)="fileChanged($event)">  
+    <hr>
+    <button [disabled]="isInvalidFile" (click)="submitDocument()" class="btn btn-light border">Invoeren</button>
+</div>
+
+<diV *ngIf="isInvalidFile && hasSelectedFile"
+    class="alert alert-danger col-6" 
+    role="alert" >
+    {{fileTypeErrorMessage}}
+</diV>
+
+<div *ngIf="courseInstanceService?.uploadResponse?.instancesAdded > 0 && !courseInstanceService?.hasInputError"
+    class="alert alert-success col-6" 
+    role="alert" >
+    Er zijn {{courseInstanceService?.uploadResponse?.coursesAdded}} cursussen en {{courseInstanceService?.uploadResponse?.instancesAdded}} cursusinstanties toegevoegd.
+</div>
+
+<div *ngIf="courseInstanceService?.uploadResponse?.duplicateInstances > 0  && !courseInstanceService?.hasInputError"
+    class="alert alert-danger col-6" 
+    role="alert" >
+    Er zijn {{courseInstanceService?.uploadResponse?.duplicateInstances}} duplicaten gevonden.
+</div>
+
+<div *ngIf="courseInstanceService.hasInputError"
+    class="alert alert-danger col-6" 
+    role="alert" >
+    {{courseInstanceService?.inputErrorMessage}}
+</div>
+
+
+
+
