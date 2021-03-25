@@ -8,7 +8,7 @@ namespace DAL.Interfaces
 {
     public interface ICourseInstanceRepository
     {
-        Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr);
+        Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr, int? year);
         Task<List<CourseInstance>> GetAllCourseInstances();
         Task<CourseInstance> Create(CourseInstance instance);
         CourseInstance FindCourseInstanceDuplicate(DateTime startdate, string code);

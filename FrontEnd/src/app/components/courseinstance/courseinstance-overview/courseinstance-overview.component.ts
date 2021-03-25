@@ -21,4 +21,5 @@ export class CourseinstanceOverviewComponent implements OnInit {
       console.log(this.courseInstances)
   });
   }
+
 }

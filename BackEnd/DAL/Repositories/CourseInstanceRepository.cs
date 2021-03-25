@@ -29,15 +29,17 @@ namespace DAL.Repositories
         }
 
 
-        public async Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr)
+        // Optional parameters for week and year default to the current if no value is geven
+        public async Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr, int? year)
         {
             List<CourseInstance> instances = new List<CourseInstance>();
 
             foreach (var instance in await GetAllCourseInstances())
             {
                 var ciWeeknr = ISOWeek.GetWeekOfYear(instance.StartDate);
+                var ciYear = ISOWeek.GetYear(instance.StartDate);
 
-                if (weeknr == ciWeeknr)
+                if (weeknr == ciWeeknr && year == ciYear)
                     instances.Add(instance);
             }
                         

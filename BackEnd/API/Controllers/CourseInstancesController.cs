@@ -30,13 +30,16 @@ namespace API.Controllers
 
         //GET: api/CourseInstances/     
         [HttpGet]
-        [Route("/api/CourseInstances/week/{weeknr?}")]
-        public async Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr)
+        [Route("/api/CourseInstances/week/{weeknr?}/{year?}")]
+        public async Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr, int? year)
         {
+            // If no value is given for the week number and year, the current week and year are used
             if (weeknr == null)
                 weeknr = ISOWeek.GetWeekOfYear(DateTime.Now);
+            if (year == null)
+                year = ISOWeek.GetYear(DateTime.Now);
 
-            return await _courseInstanceContext.GetAllCourseInstancesPerGivenWeek(weeknr);
+            return await _courseInstanceContext.GetAllCourseInstancesPerGivenWeek(weeknr, year);
         }
 
         //POST: api/CourseInstances/     
