@@ -10,6 +10,7 @@ import { Validators } from "@angular/forms";
   })
   export class CourseInstanceService{
     private url = 'https://localhost:44340/api/';
+
     uploadResponse : UploadResponse;
     courseInstances: CourseInstance[] = [];
     subject = new Subject<CourseInstance[]>();
@@ -30,7 +31,7 @@ import { Validators } from "@angular/forms";
         return this.subject;
     };
     
-    // This method posts the courseinstance array to the server
+    // This method posts an courseinstance array to the server
     postCourses(instances : CourseInstance[]) {
       this.httpClient
         .post((this.url + 'courseinstances'), instances)
@@ -47,7 +48,7 @@ import { Validators } from "@angular/forms";
       this.hasInputError = false;
       let courses = input.split("\n\n");  
 
-      for (let i:number = 0; i<courses.length; i++){
+      for (let i: number = 0; i<courses.length; i++){
         if (courses[i] != ""){          
           let validationResult = this.validate(courses[i]);
 
@@ -72,14 +73,13 @@ import { Validators } from "@angular/forms";
             instanceArray.push(instance)
           }
         }      
-      }
-      
+      }      
       this.postCourses(instanceArray)
     }
 
     // This method validates the input for the instance and returns an errorcode to the user if invalid input is detected
     // IErrorCodes above 0 also indicate the linenumber where within the instance the error was detected
-      validate(instance : string) : number{
+    validate(instance : string) : number{
       let lines = instance.split('\n');  
 
       if (lines.length > 4){
