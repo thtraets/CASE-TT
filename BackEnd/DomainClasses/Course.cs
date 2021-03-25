@@ -10,9 +10,5 @@ namespace DomainClasses
         public string Title { get; set; }
         public string Code { get; set; }
         public int Duration { get; set; }
-
-
-        // One course can have multiple courseinstances
-        //public ICollection<CourseInstance> CourseInstances { get; set; } 
     }
 }

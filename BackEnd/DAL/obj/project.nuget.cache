@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XxIqvfWVUajrrT0MsEFFqWampJi1h0Kh8tMrKOK9T9HbpApnkdiLruMUR+3NPwZvoYTF95N5T/X/3SeBipsnAQ==",
+  "dgSpecHash": "hW6j2xhZvdUlo4Q4Dgno4p2XxwjrwyW/dmED2K1V/bqgIveNYFeR8kSGyz2y2gfOGWK2EYP9AsHBCeUBmoqb/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thtra\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\thtra\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

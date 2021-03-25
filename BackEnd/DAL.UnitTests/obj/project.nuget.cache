@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tG/crGOFnbFiKKmBBcAmsgeWkMfqMl7jZ4JtkHVnPjTlSSOlJenM+oo2+20KQ7M37UxiDirUMebZNhp0zB3YBA==",
+  "dgSpecHash": "ITX23dGw2HoH5DibiQRYQJfKmBJ51u9HoCmC+6XFSI1sxcLjYSqNRM/OxpGguKwSPOTUtSt/55r7P2Ks4kC0pA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\DAL.UnitTests\\DAL.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL.UnitTests\\DAL.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thtra\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\thtra\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

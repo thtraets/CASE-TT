@@ -6552,11 +6552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\API\\API.csproj",
+      "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\API.csproj",
       "packagesPath": "C:\\Users\\thtra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\API\\obj\\",
+      "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thtra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6573,8 +6573,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\DAL\\DAL.csproj"
+            "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj"
             }
           }
         }
