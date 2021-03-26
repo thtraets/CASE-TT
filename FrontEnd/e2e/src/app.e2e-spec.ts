@@ -21,9 +21,7 @@ describe('Secretariaat - Course overview page', () => {
   });
 
   // TODO
-  // Select and Upload file
-
-  
+    // Select and Upload file 
 
 
   afterEach(async () => {
@@ -61,7 +59,7 @@ describe('Coordinatoren - Course overview page', () => {
   });
 
   // TODO
-  // Add check how many table rows appear and whether it matches courseinstanceService.getInstances()
+    // Add check how many table rows appear and whether it matches courseinstanceService.getInstances()
 
 
   afterEach(async () => {
