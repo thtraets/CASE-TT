@@ -15,3 +15,8 @@ Het project bevat een map models om op het type van course en courseinstance te 
 
 #### Tests
 Unit tests zijn te draaien door `ng test` in te voeren in de terminal. End to End tests zijn uit te voeren met `ng e2e` in de terminal.
+
+
+## Pagina's
+- `http://localhost:4200/co%C3%B6rdinatoren` voor de werkzaamheden van de coördinatoren; het uploaden van cursusinstanties
+- `http://localhost:4200/secretariaat`voor de werkzaamheden van het secretariaat; het overzicht van cursusinstanties
