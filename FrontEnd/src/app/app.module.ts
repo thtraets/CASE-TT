@@ -11,7 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 
 
 const appRoutes : Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', component: CourseinstanceOverviewComponent},
   {path: 'secretariaat', component: CourseinstanceOverviewComponent},
   {path: 'coördinatoren', component: CourseAddComponent},
 ];

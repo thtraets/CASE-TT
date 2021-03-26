@@ -100,7 +100,7 @@ describe('CourseInstanceService - validate()', () => {
 });
 
 
-fdescribe('CourseInstanceService - validate()', () => {
+describe('CourseInstanceService - validate()', () => {
   let service: CourseInstanceService;
 
   beforeEach(() => {
