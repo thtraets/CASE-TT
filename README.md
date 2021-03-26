@@ -1,7 +1,6 @@
 # CASE-TT
  
- ## Opzetten van het project
- 
+ ## Opzetten van het project 
 - Download het bestand als zip
 - Unzip de map
 
@@ -17,13 +16,13 @@
 - Mogelijk geeft de browser een waarschuwing vanwege het gebruik van een self-singed SSL certificate. Negeer de waarschuwing, wanneer een lege array objecten verschijnt is de backend opgezet
 
 ### Frontend
-- Voor de frontend is een werkende backend nodig
-- De frontend vergt ook een globaal geinstalleerde Angular/CLI. 
+Voor de Frontend is een werkende backend nodig
+De frontend vergt ook een globaal geinstalleerde Angular/CLI. 
 
-- Open de 'frontend' folder in Visual Studio Code
+- Open de 'Frontend' folder in Visual Studio Code
 - Indien het apparaat nog geen Angular heeft, voer dan `npm install -g @angular/cli` uit in de terminal om Angular globaal te installeren
 - Voer `npm install` uit in de terminal om de benodigde packages te installeren
-- Voer `ng serve` uit in de terminal om  Angular de frontend te laten serveren
+- Voer `ng serve` uit in de terminal om  Angular de Frontend te laten serveren
 - De pagina is te vinden op `https://localhost:4200`
 
 
