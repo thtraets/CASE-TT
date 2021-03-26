@@ -34,7 +34,7 @@ Voor de Frontend is een werkende backend nodig
 ## Links 
 Wanneer het project is opgezet is de applicatie op de volgende manier te bereiken:
 - Frontend: `localhost:4200`
-- Backend: `https://localhost:44340/api/courses`
+- Backend: `https://localhost:44340`
 
 ## Verdere informatie
 In de readme binnen de Backend en Frontend folders is verdere informatie te vinden over de algemene indeling van het project
