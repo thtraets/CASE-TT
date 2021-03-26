@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\API.csproj": {}
+    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\API.csproj": {
+    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\API.csproj",
+        "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\API\\API.csproj",
         "packagesPath": "C:\\Users\\thtra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API\\obj\\",
+        "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thtra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj"
+              "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DAL\\DAL.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj": {
+    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\thtra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thtra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,8 +113,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj": {
-                "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj"
+              "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj": {
+                "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj"
               }
             }
           }
@@ -177,14 +177,14 @@
         }
       }
     },
-    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj": {
+    "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj",
+        "projectUniqueName": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj",
         "projectName": "DomainClasses",
-        "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj",
+        "projectPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj",
         "packagesPath": "C:\\Users\\thtra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DomainClasses\\obj\\",
+        "outputPath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DomainClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thtra\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2pZxIhZjx4fZWg30q7Db7mBq7YZYj8hcKLlUEcE35hBQDubd4+5vQuTpjUpCSZhayTpyWaY6U/faXdjGjNt1QA==",
+  "dgSpecHash": "6QjOfUeplJQUjBHirKBo8JnVTjb92Ys8li8yFfBj2vishCUf3nrCCdy9MyXQeOKH3iN2u8/1V9JKDPDeqfszTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj",
+  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\DomainClasses\\DomainClasses.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

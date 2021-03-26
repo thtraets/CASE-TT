@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XAlAn31O+7zXZV3h9qfRMg8OXnTMbJAhwprZSKfb7HLLoI9mDGHJ1944jfreHRF9uG49/MHdnbS031LGW/L34Q==",
+  "dgSpecHash": "+dt8LBQ6LfnlZWJnXBTh8N416CfrYQyLWqMXKRt2G2gvV4QoGsW8o4orCp3nUqOFs9kr9VNdqgaGbl76qxpoMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\ENDCASE-TT\\BackEnd\\API.UnitTests\\API.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\thtra\\Source\\Repos\\thtraets\\CASE-TT\\BackEnd\\API.UnitTests\\API.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thtra\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\thtra\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
