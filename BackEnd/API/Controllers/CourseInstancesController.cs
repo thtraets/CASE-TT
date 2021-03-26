@@ -1,5 +1,5 @@
 ﻿using DAL.Interfaces;
-using DAL.Utils;
+using API.Utils;
 using DomainClasses;
 using Microsoft.AspNetCore.Mvc;
 using System;

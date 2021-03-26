@@ -19,7 +19,7 @@ const appRoutes : Routes = [
   declarations: [
     AppComponent,
     CourseinstanceOverviewComponent,    
-    CourseAddComponent,
+    CourseAddComponent
   ],
   imports: [
     BrowserModule,

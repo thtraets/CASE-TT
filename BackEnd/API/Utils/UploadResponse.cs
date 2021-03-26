@@ -1,7 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace DAL.Utils
+namespace API.Utils
 {
+    // This class serves as a response object from the server, telling the client 
     public class UploadResponse
     {
         [JsonProperty("InstancesAdded")]

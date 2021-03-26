@@ -8,7 +8,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-
 namespace API
 {
     public class Startup
@@ -26,11 +25,6 @@ namespace API
             services.AddControllers();
 
             services.AddCors();
-
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy("AllowAnyCorsPolicy", policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
-            //});
 
             services.AddScoped<ICourseRepository, CourseRepository>();
             services.AddScoped<ICourseInstanceRepository, CourseInstanceRepository>();
@@ -51,6 +45,7 @@ namespace API
 
             app.UseRouting();
 
+            // At the moment, only connections from the Angular development at http://localhost:4200 is allowed
             app.UseCors(options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthorization();

@@ -18,8 +18,6 @@ export class CourseinstanceOverviewComponent implements OnInit {
     this.courseInstanceService.getCourseInstances()
     .subscribe((result) => {      
     this.courseInstances = result
-      console.log(this.courseInstances)
   });
   }
-
 }
