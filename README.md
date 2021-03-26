@@ -12,7 +12,7 @@ Voor het project zijn recente versies van Node.js, Angular, .NET en de IDE's Vis
 - Download het bestand als zip
 - Unzip de map
 
-### Backend
+#### Backend
 - Open in de folder 'Backend' de CASE-TT.sln in Visual Studio.  
 - Laat Visual Studio enige tijd op zoek gaan naar de benodigde nugets.
 - Selecteer in de Package Manager Console het project DAL. 
@@ -21,7 +21,7 @@ Voor het project zijn recente versies van Node.js, Angular, .NET en de IDE's Vis
 - De browser zal de pagina `https://localhost:44340/api/courses` laden. 
 - Waarschiinlijk zal de browser een waarschuwing geven vanwege het gebruik van een self-signed SSL certificate. Negeer de waarschuwing, wanneer een lege array objecten verschijnt is de backend opgezet.
 
-### Frontend
+#### Frontend
 Voor de Frontend is een werkende backend nodig
 
 - Open de 'Frontend' folder in Visual Studio Code
