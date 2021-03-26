@@ -18,5 +18,5 @@ Unit tests zijn te draaien door `ng test` in te voeren in de terminal. End to En
 
 
 ## Pagina's
-- `http://localhost:4200/co%C3%B6rdinatoren` voor de werkzaamheden van de coördinatoren; het uploaden van cursusinstanties
+- `http://localhost:4200/coördnatoren` voor de werkzaamheden van de coördinatoren; het uploaden van cursusinstanties
 - `http://localhost:4200/secretariaat`voor de werkzaamheden van het secretariaat; het overzicht van cursusinstanties
