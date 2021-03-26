@@ -19,5 +19,5 @@ De API controllers spreken via de repository interfaces van de DAL met de databa
 ## Endpoint
 De endpoints van de api zijn:
 - `https://localhost:44340/api/courses` voor alle courses
-- 'https://localhost:44340/api/courseinstances' voor alle instances
-- 'https://localhost:44340/api/courseinstances/week/(optioneel weeknummer)/(optioneel jaartal)' voor de instances binnen een specifieke week en/of jaar. Wanneer leeg gelaten wordt de huidige week van het huidige jaar getoond.
+- `https://localhost:44340/api/courseinstances` voor alle instances
+- `https://localhost:44340/api/courseinstances/week/(optioneel weeknummer)/(optioneel jaartal)` voor de instances binnen een specifieke week en/of jaar. Wanneer leeg gelaten wordt de huidige week van het huidige jaar getoond.
