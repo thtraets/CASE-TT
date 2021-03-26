@@ -10,3 +10,8 @@ De courseInstance-service communiceert met de API om instances te krijgen of te 
 #### Components
 Het courseinstance-overview.component spreekt de service aan om een overview van de cursussen van de huidige week weer te geven. De course-add.component staat de user toe om een .txt bestand te selecteren. De service behandelt de validatie en geeft het component feedback over het resultaat.
 
+#### Models
+Het project bevat een map models om op het type van course en courseinstance te kunnen toetsen wanneer deze worden gebruikt. Het UploadResponse model wordt gebruikt om zeker te weten dat de response van de server aan de versiten voldoet en gemakkelijk uit te lezen is.
+
+#### Tests
+Unit tests zijn te draaien door `ng test` in te voeren in de terminal. End to End tests zijn uit te voeren met `ng e2e` in de terminal.
