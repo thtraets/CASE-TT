@@ -3,7 +3,6 @@ import { Subject } from "rxjs";
 import { CourseInstance } from "../models/CourseInstance";
 import { HttpClient } from "@angular/common/http";
 import { UploadResponse } from "../models/UploadResponse";
-import { Validators } from "@angular/forms";
 
 @Injectable({
     providedIn: 'root'

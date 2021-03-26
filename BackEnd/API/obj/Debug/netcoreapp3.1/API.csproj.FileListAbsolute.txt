@@ -144,12 +144,10 @@ C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\API.runtimeconfig.dev.json
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\API.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\API.pdb
-C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -205,3 +203,5 @@ C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\obj\Debug\netcoreapp3.1
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\obj\Debug\netcoreapp3.1\API.dll
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\obj\Debug\netcoreapp3.1\API.pdb
 C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\thtra\Source\Repos\thtraets\CASE-TT\BackEnd\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
