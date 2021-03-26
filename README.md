@@ -31,4 +31,6 @@ Voor de Frontend is een werkende backend nodig
 - De pagina is te vinden op `https://localhost:4200`
 
 
+## Verdere informatie
+In de readme binnen de Backend en Frontend folders is verdere informatie te vinden over de algemene indeling van het project
 

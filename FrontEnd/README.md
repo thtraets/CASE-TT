@@ -1,27 +1,12 @@
-# FrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+# Frontend
 
-## Development server
+## Indeling
+De Frontend bevat 2 belangrijke componenten en 1 belangrijke service.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Services
+De courseInstance-service communiceert met de API om instances te krijgen of te posten. Validatie van geldige input gebeurt binnen de frontend om minder verkeer over de lijn te hebben naar de backend. Validatie of de data aan het datamodel voldoet gebeurt later ook aan de backend. 
 
-## Code scaffolding
+#### Components
+Het courseinstance-overview.component spreekt de service aan om een overview van de cursussen van de huidige week weer te geven. De course-add.component staat de user toe om een .txt bestand te selecteren. De service behandelt de validatie en geeft het component feedback over het resultaat.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
