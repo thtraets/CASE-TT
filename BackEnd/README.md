@@ -16,7 +16,7 @@ De API voorziet de endpoints van de applicatie. Op het moment is alleen Cross Or
 De API controllers spreken via de repository interfaces van de DAL met de database.
 
 
-## Endpoint
+## Endpoints
 De endpoints van de api zijn:
 - `https://localhost:44340/api/courses` voor alle courses
 - `https://localhost:44340/api/courseinstances` voor alle instances
