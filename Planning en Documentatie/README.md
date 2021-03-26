@@ -3,7 +3,7 @@
 ## Inleiding  
 Het Info Support Kenniscentrum wil graag haar cursus- en cursistenadministratie geïntegreerd automatiseren. Dit project is een eerste stap in die richting.
 
-De verwerkte features zijn te vinden in de backlog in bestand `User Story Map - sliced.xlsx` in de folder `Documenten`. Hier is ook een folder met invoervoorbeelden die voor het toetsen van de applicatie kunnen worden gebruikt.
+De verwerkte features zijn te vinden in de backlog in bestand `Backlog sprintresultaten.xlsx` in de folder `Planning en Documentatie`. Hier is ook een folder met invoervoorbeelden die voor het toetsen van de applicatie kunnen worden gebruikt.
 
 ## Benodigdheden  
 Voor het project zijn recente versies van Node.js, Angular, .NET en de IDE's Visual Studio en Visual Studio Code benodigd.
@@ -31,4 +31,11 @@ Voor de Frontend is een werkende backend nodig
 - De pagina is te vinden op `https://localhost:4200`
 
 
+## Links 
+Wanneer het project is opgezet is de applicatie op de volgende manier te bereiken:
+- Frontend: https://localhost:4200
+- Backend: https://localhost:44340/api/courses
+
+## Verdere informatie
+In de readme binnen de Backend en Frontend folders is verdere informatie te vinden over de algemene indeling van het project
 
