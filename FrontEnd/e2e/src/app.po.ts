@@ -1,6 +1,9 @@
+import { resolve } from 'node:path';
 import { browser, by, element } from 'protractor';
 
-export class AppPage {
+export class courseOverViewPO {
+
+
   async navigateTo(url){
     await browser.get(url);
   }
@@ -8,6 +11,28 @@ export class AppPage {
   async getTitleText(): Promise<string> {
     return element(by.tagName('h1')).getText();
   }
+
+  async findTable(){
+    return (await element.all(by.className("table table-hover")));
+  }
+
+  // async countInstancesReceivedFromApi(){  
+  //   // return fetch('https://localhost:44340/api/courseinstances/week')
+  //   //     .then(response => response.json()).then(resolve)
+
+  //   let instances = [];
+
+  //   fetch('https://localhost:44340/api/courseinstances/week')
+  //     .then(response => response.json())
+  //     .then(data => instances = data);
+
+  //   return instances;
+  // }
+
+  async countTableRows(){
+    return (await element.all(by.tagName("tr")));
+  }
+
 }
 
 
@@ -40,11 +65,11 @@ export class courseAddPO {
   }
 
   async findButton(){
-    return (await element.all(by.tagName('button')));
+    return (await element.all(by.className("btn btn-light border")));
   }
 
-  async submitForm(){
-      await element(by.id('submitModelDriven')).click();
+  async submit(){
+      await element(by.className("btn btn-light border")).click();
   }
 }
 

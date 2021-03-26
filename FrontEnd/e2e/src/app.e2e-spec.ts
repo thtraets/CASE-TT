@@ -1,11 +1,13 @@
 import { browser, logging } from 'protractor';
-import { AppPage, courseAddPO } from './app.po';
+import { courseOverViewPO, courseAddPO } from './app.po';
+import {CourseInstance} from 'src/app/models/CourseInstance'
 
 describe('Secretariaat - Course overview page', () => {
-  let page: AppPage;
+  let page: courseOverViewPO;
 
   beforeEach(async () => {
-    page = new AppPage();
+  
+    page = new courseOverViewPO();
     await page.navigateTo('http://localhost:4200/secretariaat')
   });
 
@@ -14,15 +16,28 @@ describe('Secretariaat - Course overview page', () => {
     expect(result.substring(0, 22)).toBe(`Weekoverzicht van week`);
   });
 
+  it('should display a table for the results', async () => {
+    let result = await page.findTable();    
+    expect(result).toBeTruthy();
+  });
+
+  it('should display as many rows as there are instances for the week', async () => {
+    let result = await page.countTableRows();    
+
+    // let expected = await page.countInstancesReceivedFromApi() as CourseInstance[] 
+    
+
+    expect(expected.length).toBe(result.length)
+  });
 
 
-  // afterEach(async () => {
-  //   // Assert that there are no errors emitted from the browser
-  //   const logs = await browser.manage().logs().get(logging.Type.BROWSER);
-  //   expect(logs).not.toContain(jasmine.objectContaining({
-  //     level: logging.Level.SEVERE,
-  //   } as logging.Entry));
-  // });  
+  afterEach(async () => {
+    // Assert that there are no errors emitted from the browser
+    const logs = await browser.manage().logs().get(logging.Type.BROWSER);
+    expect(logs).not.toContain(jasmine.objectContaining({
+      level: logging.Level.SEVERE,
+    } as logging.Entry));
+  });  
 });
 
 
@@ -41,17 +56,24 @@ describe('Coordinatoren - Course overview page', () => {
     expect(await page.getTitleText()).toBe('Upload');
   });
 
-  it('should find a dsiabled button', async () => {
+  it('should find a disabled button', async () => {
     let result = await page.findButton();
 
     expect(result).toBeTruthy();    
   });
-  
-  // afterEach(async () => {
-  //   // Assert that there are no errors emitted from the browser
-  //   const logs = await browser.manage().logs().get(logging.Type.BROWSER);
-  //   expect(logs).not.toContain(jasmine.objectContaining({
-  //     level: logging.Level.SEVERE,
-  //   } as logging.Entry));
-  // });  
+  it('should be unable to click the disabled button', async () => {
+    let result = await page.submit();
+
+    expect(result).toBeFalsy();    
+  });
+
+
+
+  afterEach(async () => {
+    // Assert that there are no errors emitted from the browser
+    const logs = await browser.manage().logs().get(logging.Type.BROWSER);
+    expect(logs).not.toContain(jasmine.objectContaining({
+      level: logging.Level.SEVERE,
+    } as logging.Entry));
+  });  
 });
