@@ -29,7 +29,7 @@ namespace DAL.Repositories
         }
 
 
-        // Optional parameters for week and year default to the current if no value is geven
+        // Optional parameters for week and year default to the current week and year if no value is geven
         public async Task<List<CourseInstance>> GetAllCourseInstancesPerGivenWeek(int? weeknr, int? year)
         {
             List<CourseInstance> instances = new List<CourseInstance>();
@@ -59,6 +59,7 @@ namespace DAL.Repositories
             return _context.CourseInstances.FirstOrDefault(c => c.StartDate == startdate && c.Course.Code == code);
         }
 
+        // Accessing the Course via the CourseInstance repository is done to allow acces to the Course without having to use both the CourseInstance and Course repository;
         public Course FindCourseByCode(string code)
         {
             var instances = _context.CourseInstances.Include(c => c.Course).Where(c => c.Course.Code == code);

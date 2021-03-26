@@ -2,7 +2,7 @@
 
 namespace API.Utils
 {
-    // This class serves as a response object from the server, telling the client 
+    // This class serves as a response object from the server, telling the client how much has been added and/or how many duplicates were found
     public class UploadResponse
     {
         [JsonProperty("InstancesAdded")]
