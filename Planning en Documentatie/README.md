@@ -34,8 +34,9 @@ Voor de Frontend is een werkende backend nodig
 ## Links 
 Wanneer het project is opgezet is de applicatie op de volgende manier te bereiken:
 - Frontend: `localhost:4200`
-- Backend: `https://localhost:44340/api/courses`
+- Backend: `https://localhost:44340`
 
 ## Verdere informatie
 In de readme binnen de Backend en Frontend folders is verdere informatie te vinden over de algemene indeling van het project
 
+Op de pagina van het secretariaat worden de cursussen van de huidige week getoond. Wanneer in de folder `Planning en Documentatie` invoervoorbeelden worden geselecteerd om in te voeren, kan het zijn dat er alsnog geen cursus van de huidige week bij zit. Zit je dit project toevallig in week 14 te bekijken? In die week staan helaas geen cursussen gepland. Kijk dan bijvoorbeeld op `https://localhost:44340/api/courseinstances/week/12` om de resultaten van week 12 te bekijken. 
