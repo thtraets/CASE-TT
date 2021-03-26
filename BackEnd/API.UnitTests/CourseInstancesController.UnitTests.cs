@@ -8,7 +8,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-
 namespace API.UnitTests
 {
     public class CourseInstancesControllerTests
@@ -41,9 +40,6 @@ namespace API.UnitTests
             instanceMockRepo.Setup(repo => repo.GetAllCourseInstances())
                 .ReturnsAsync(GetAllCourseInstancesTestSessions());
 
-            //int weeknr = ISOWeek.GetWeekOfYear(DateTime.Parse("26-03-2021"));
-            //int year = ISOWeek.GetYear(DateTime.Parse("26-03-2021"));
-
             instanceMockRepo.Setup(repo => repo.GetAllCourseInstancesPerGivenWeek(12,2021))
                 .ReturnsAsync(GetAllCourseInstancesTestSessions());
 
@@ -51,12 +47,38 @@ namespace API.UnitTests
 
             // Act
             var result = controller.GetAllCourseInstancesPerGivenWeek(12,2021);
+            var result2 = controller.GetAllCourseInstancesPerGivenWeek(null, null);
+
+
+            // Assert
+            var viewResult = Assert.IsType<Task<List<CourseInstance>>>(result);
+            Assert.IsType<Task<List<CourseInstance>>>(result2);
+            var model = Assert.IsAssignableFrom<List<CourseInstance>>(viewResult.Result);
+            Assert.Equal(2, model.Count());
+        }
+
+        [Fact]
+        public void GetAllCourseInstancesPerGivenWeek_From_Controller_With_Null_Values_Should_Still_Return_Instances_From_Given_Week_And_Year()
+        {
+            // Arrange
+            var instanceMockRepo = new Mock<ICourseInstanceRepository>();
+            instanceMockRepo.Setup(repo => repo.GetAllCourseInstances())
+                .ReturnsAsync(GetAllCourseInstancesTestSessions());
+
+            instanceMockRepo.Setup(repo => repo.GetAllCourseInstancesPerGivenWeek(12, 2021))
+                .ReturnsAsync(GetAllCourseInstancesTestSessions());
+
+            var controller = new CourseInstancesController(instanceMockRepo.Object);
+
+            // Act
+            var result = controller.GetAllCourseInstancesPerGivenWeek(null, null);
 
             // Assert
             var viewResult = Assert.IsType<Task<List<CourseInstance>>>(result);
             var model = Assert.IsAssignableFrom<List<CourseInstance>>(viewResult.Result);
             Assert.Equal(2, model.Count());
         }
+
 
 
         private List<CourseInstance> GetAllCourseInstancesTestSessions()

@@ -1,6 +1,5 @@
 import { browser, logging } from 'protractor';
 import { courseOverViewPO, courseAddPO } from './app.po';
-import {CourseInstance} from 'src/app/models/CourseInstance'
 
 describe('Secretariaat - Course overview page', () => {
   let page: courseOverViewPO;
@@ -21,13 +20,10 @@ describe('Secretariaat - Course overview page', () => {
     expect(result).toBeTruthy();
   });
 
-  it('should display as many rows as there are instances for the week', async () => {
-    let result = await page.countTableRows();    
+  // TODO
+  // Select and Upload file
 
-    // let expected = await page.countInstancesReceivedFromApi() as CourseInstance[] 
-    
-
-  });
+  
 
 
   afterEach(async () => {
@@ -64,6 +60,8 @@ describe('Coordinatoren - Course overview page', () => {
     expect(result).toBeFalsy();    
   });
 
+  // TODO
+  // Add check how many table rows appear and whether it matches courseinstanceService.getInstances()
 
 
   afterEach(async () => {

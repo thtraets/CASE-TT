@@ -10,7 +10,7 @@
         class="form-control col-3"
         (change)="fileChanged($event)">  
     <hr>
-    <button [disabled]="isInvalidFile" (click)="submitDocument()" class="btn btn-light border">Invoeren</button>
+    <button [disabled]="isInvalidFile" (click)="submitDocument()" class="btn btn-light border" id="inputButton">Invoeren</button>
 </div>
 
 <diV *ngIf="isInvalidFile && hasSelectedFile"
