@@ -14,3 +14,10 @@ In de DAL is ook de EntityTypeConfiguration van de DomainClasses te vinden. Hier
 #### API
 De API voorziet de endpoints van de applicatie. Op het moment is alleen Cross Origin Resource Sharing mogelijk vanaf adres `http://localhost:4200`. Dit is waar de Angular Frontend tijdens development op draait. Vergeet dit niet in de toekomst aan te passen als er een ander adres wordt gebruikt.
 De API controllers spreken via de repository interfaces van de DAL met de database. De API is ook afhankelijk van Newton.Json. 
+
+
+## Endpoint
+De endpoints van de api zijn:
+- `https://localhost:44340/api/courses` voor alle courses
+- `https://localhost:44340/api/courseinstances` voor alle instances
+- `https://localhost:44340/api/courseinstances/week/(optioneel weeknummer)/(optioneel jaartal)` voor de instances binnen een specifieke week en jaar. Wanneer leeg gelaten wordt de huidige week van het huidige jaar getoond.
