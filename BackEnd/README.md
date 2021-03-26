@@ -2,7 +2,6 @@
 # Backend
 
 ## Indeling
-
 De Backend is in drie delen op te splitesn:
 
 #### Domainclasses
