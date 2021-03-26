@@ -3,7 +3,7 @@
 ## Inleiding  
 Het Info Support Kenniscentrum wil graag haar cursus- en cursistenadministratie geïntegreerd automatiseren. Dit project is een eerste stap in die richting.
 
-De verwerkte features zijn te vinden in de backlog in bestand `Backlog sprintresultaten.xlsx``, die per dag een tabblad heeft van de vorderingen, in de folder `Planning en Documentatie`. Hier is ook een folder met invoervoorbeelden die voor het toetsen van de applicatie kunnen worden gebruikt.
+De verwerkte features zijn te vinden in de backlog in bestand `Backlog sprintresultaten.xlsx`, die per dag een tabblad heeft van de vorderingen, in de folder `Planning en Documentatie`. Hier is ook een folder met invoervoorbeelden die voor het toetsen van de applicatie kunnen worden gebruikt.
 
 ## Benodigdheden  
 Voor het project zijn recente versies van Node.js, Angular, .NET en de IDE's Visual Studio en Visual Studio Code benodigd.
