@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace API.Utils
+namespace DAL.Utils
 {
     public class UploadResponse
     {

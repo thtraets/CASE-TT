@@ -27,7 +27,6 @@ describe('Secretariaat - Course overview page', () => {
     // let expected = await page.countInstancesReceivedFromApi() as CourseInstance[] 
     
 
-    expect(expected.length).toBe(result.length)
   });
 
 
@@ -39,8 +38,6 @@ describe('Secretariaat - Course overview page', () => {
     } as logging.Entry));
   });  
 });
-
-
 
 
 describe('Coordinatoren - Course overview page', () => {
