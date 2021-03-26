@@ -41,11 +41,9 @@ namespace DAL.Repositories
 
                 if (weeknr == ciWeeknr && year == ciYear)
                     instances.Add(instance);
-            }
-                        
+            }                        
             return instances;
         }
-
 
 
         public async Task<CourseInstance> Create(CourseInstance instance)

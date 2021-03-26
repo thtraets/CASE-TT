@@ -5,7 +5,6 @@ import { CourseInstanceService } from 'src/app/services/courseInstance.service';
   selector: 'app-course-add',
   templateUrl: './course-add.component.html',
   styleUrls: ['./course-add.component.css'],
-
 })
 export class CourseAddComponent{
   file : File;

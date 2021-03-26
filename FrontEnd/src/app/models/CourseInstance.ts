@@ -1,6 +1,6 @@
 import { Course } from "./Course";
 
-export class CourseInstance{
+export interface CourseInstance{
     id : number;
     startDate : Date;
     course: Course;

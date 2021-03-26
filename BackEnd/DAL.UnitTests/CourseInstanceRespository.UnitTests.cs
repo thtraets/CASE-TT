@@ -42,7 +42,7 @@ namespace DAL.UnitTests
                 new CourseInstance() { Id = 1, StartDate = DateTime.Parse("12-05-2021"), Course = courses[0]},
                 new CourseInstance() { Id = 2, StartDate = DateTime.Parse("13-03-2021"), Course = courses[1]},
                 new CourseInstance() { Id = 3, StartDate = DateTime.Parse("10-06-2021"), Course = courses[2]},
-                new CourseInstance() { Id = 4, StartDate = DateTime.Parse("15-03-2021"), Course = courses[3]},
+                new CourseInstance() { Id = 4, StartDate = DateTime.Parse("26-03-2021"), Course = courses[3]},
             };
 
             _context.CourseInstances.AddRange(courseInstances);
@@ -97,6 +97,39 @@ namespace DAL.UnitTests
             Assert.IsNotNull(resultTitle);
             Assert.IsNotNull(resultId);
         }
+
+        [TestMethod]
+        public async Task GetAllCourseInstancesForGivenWeek_Should_Return_Only_The_Courses_Of_That_Week()
+        {
+            // Arrange
+            var courseInstances = await _repository.GetAllCourseInstancesPerGivenWeek(12,2021);
+
+            // Act
+            var result = courseInstances.Count;
+            var expected = 1;
+
+            // Assert
+            Assert.AreEqual(expected, result);
+            Assert.IsInstanceOfType(courseInstances.First(), typeof(CourseInstance));
+            Assert.IsInstanceOfType(courseInstances[0].Course, typeof(Course));
+        }
+
+
+        [TestMethod]
+        public void GetAllCourseInstancesForGivenWeek_Should_Return_Null_If_There_Is_no_course_that_week()
+        {
+            // Arrange
+            var courseInstances = _repository.GetAllCourseInstancesPerGivenWeek(1,2030).Result;
+
+            // Act
+            var resultCount = courseInstances.Count;
+            var expectedCount = 0;
+
+            // Assert
+            Assert.AreEqual(resultCount, expectedCount);
+        }
+
+
 
         [TestMethod]
         public void Create_Instance_Should_Add_A_New_Instance()
@@ -193,9 +226,6 @@ namespace DAL.UnitTests
 
             // Assert
             Assert.IsNull(foundCourse);
-        }        
-
-
-
+        }       
     }
 }

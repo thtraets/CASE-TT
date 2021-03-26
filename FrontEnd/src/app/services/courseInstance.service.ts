@@ -17,7 +17,7 @@ import { UploadResponse } from "../models/UploadResponse";
     inputErrorMessage: string;
     hasInputError: boolean = false;
 
-    constructor(private httpClient : HttpClient ) {}
+    constructor(private httpClient : HttpClient) {}
 
     // This method returns a courseinstance array from the server
     getCourseInstances() : Subject<CourseInstance[]>{
@@ -31,7 +31,7 @@ import { UploadResponse } from "../models/UploadResponse";
     };
     
     // This method posts an courseinstance array to the server
-    postCourses(instances : CourseInstance[]) {
+    public postCourses(instances : CourseInstance[]) {
       this.httpClient
         .post((this.url + 'courseinstances'), instances)
         .subscribe(res => {
@@ -39,7 +39,7 @@ import { UploadResponse } from "../models/UploadResponse";
       }) 
     };
 
-    // This method seperates a raw textstring as provided by the course-add.component into an array of courseinstances
+    //This method seperates a raw textstring as provided by the course-add.component into an array of courseinstances
     separateCourses(input: string){
       let instance : CourseInstance;
       let instanceArray : CourseInstance[] = []
@@ -49,7 +49,7 @@ import { UploadResponse } from "../models/UploadResponse";
 
       for (let i: number = 0; i<courses.length; i++){
         if (courses[i] != ""){          
-          let validationResult = this.validate(courses[i]);
+          let validationResult = this.validate(courses[i]);       
 
           // ValidationResult 0 indicates that no validationerror were found.
           // Any other errorcode also indicates the line within the instance on which the error was found
